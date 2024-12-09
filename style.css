@@ -1,0 +1,93 @@
+
+body {
+  background-color: #c3d2d6d8;
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+h1, h2, h3 ,a{
+  font-family: Georgia, serif;
+}
+h1 {
+  color: #575F7D;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+}
+h2 {
+  color: #0b0e0b;
+  font-size: 20px;
+  font-weight: lighter;
+
+}
+a {
+
+  text-decoration: none;
+  color: #280a79;
+  font-weight: 700;
+  font-size: 18px;
+}
+a:hover {
+  color: rgb(24, 26, 24);
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.card{
+  width: 70%;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.card h1, .card h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+
+}
+.text-center {
+  text-align: center;
+}
+
+
+
+ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
