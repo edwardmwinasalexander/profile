@@ -1,5 +1,5 @@
-
 body {
+  background: linear-gradient(to bottom, #00c6ff, #0072ff);
   background-color: #c3d2d6d8;
   color: #333333;
   font-family: 'Roboto', sans-serif;
@@ -7,28 +7,38 @@ body {
   font-weight: lighter;
   line-height: 1.6;
 }
-h1, h2, h3 ,a{
+
+h1, h2, h3, a {
   font-family: Georgia, serif;
 }
+
 h1 {
   color: #575F7D;
   font-size: 32px;
   font-weight: 900;
   text-align: center;
 }
+
 h2 {
   color: #0b0e0b;
   font-size: 20px;
   font-weight: lighter;
-
 }
-a {
 
+p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  color: #29233b;
+  margin: 10px;
+}
+
+a {
   text-decoration: none;
   color: #280a79;
   font-weight: 700;
   font-size: 18px;
 }
+
 a:hover {
   color: rgb(24, 26, 24);
 }
@@ -41,8 +51,6 @@ a:hover {
   display: block;
 }
 
-
-
 .container {
   width: 90%;
   margin: 0 auto;
@@ -52,8 +60,7 @@ a:hover {
   flex-wrap: wrap;
 }
 
-
-.card{
+.card {
   width: 70%;
   background-color: white;
   padding: 30px;
@@ -61,33 +68,50 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
 }
+
 .card h1, .card h2 {
   font-family: 'Roboto', sans-serif;
   color: #333;
-
 }
+
 .text-center {
   text-align: center;
 }
 
+ul {
+  margin-top: 10px;
+  padding-left: 0;
+}
 
-
-ul li a {
+#ul_links li {
   text-decoration: none;
   color: #007bff;
   font-size: 16px;
+  display: inline;
 }
 
-ul li a:hover {
+#ul_links a:hover {
   text-decoration: underline;
   color: #0056b3;
 }
 
-
 @media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
   }
 }
